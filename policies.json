@@ -1,0 +1,60 @@
+{
+  "policies": [
+    {
+      "id":          "POL-001",
+      "name":        "Department Isolation",
+      "priority":    1,
+      "effect":      "deny",
+      "description": "Users may only access resources belonging to their own department, unless they hold an exempt role.",
+      "conditions": {
+        "exempt_roles": ["Admin"]
+      }
+    },
+    {
+      "id":          "POL-002",
+      "name":        "Classification Clearance Check",
+      "priority":    2,
+      "effect":      "deny",
+      "description": "User clearance level must meet or exceed the resource classification.",
+      "conditions": {
+        "clearance_map": {
+          "public":       0,
+          "confidential": 1,
+          "secret":       2
+        }
+      }
+    },
+    {
+      "id":          "POL-003",
+      "name":        "Business Hours Access Control",
+      "priority":    3,
+      "effect":      "deny",
+      "description": "Access is only permitted during business hours (08:00–18:00). Admin is exempt.",
+      "conditions": {
+        "start_hour":   8,
+        "end_hour":     18,
+        "exempt_roles": ["Admin"]
+      }
+    },
+    {
+      "id":          "POL-004",
+      "name":        "External Access Restriction",
+      "priority":    4,
+      "effect":      "deny",
+      "description": "Users connecting from an external location cannot access confidential or secret resources.",
+      "conditions": {
+        "restricted_classifications": ["confidential", "secret"]
+      }
+    },
+    {
+      "id":          "POL-005",
+      "name":        "Delete Operation Restriction",
+      "priority":    5,
+      "effect":      "deny",
+      "description": "Only the Admin role may delete resources (Separation of Duties).",
+      "conditions": {
+        "allowed_roles": ["Admin"]
+      }
+    }
+  ]
+}

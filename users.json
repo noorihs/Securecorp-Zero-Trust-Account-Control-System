@@ -1,0 +1,100 @@
+{
+  "users": {
+    "alice": {
+      "role": "Admin",
+      "department": "IT",
+      "clearance": "secret",
+      "location": "internal",
+      "salt": "alice_salt_2024",
+      "password_hash": "f1baf9c4697365e3bf21904c658225b890a7d92d01a42c9c3847bb41702f6ea3"
+    },
+    "bob": {
+      "role": "Manager",
+      "department": "Finance",
+      "clearance": "confidential",
+      "location": "internal",
+      "salt": "bob_salt_2024",
+      "password_hash": "6226bacb96852c5ed30a8008f3fbb97351d40d9a4f94be0c8bd93855e5a33dc8"
+    },
+    "carol": {
+      "role": "Employee",
+      "department": "HR",
+      "clearance": "public",
+      "location": "internal",
+      "salt": "carol_salt_2024",
+      "password_hash": "68337d069c121add819ca6272554e842376d95d67a8c10d43d863134b26d67b0"
+    },
+    "dave": {
+      "role": "Employee",
+      "department": "Operations",
+      "clearance": "public",
+      "location": "external",
+      "salt": "dave_salt_2024",
+      "password_hash": "fa1ecbd4e1b5ad1c660b34cf052b5b9580485e0560af8db89d75cf8c04a3f9a1"
+    },
+    "frank": {
+      "role": "Employee",
+      "department": "Finance",
+      "clearance": "confidential",
+      "location": "internal",
+      "salt": "frank_salt_2024",
+      "password_hash": "71bdcf85b75bd750f82a071a3d6480b8ed07dcd79b068bfaf37a8739d869b7ae"
+    },
+    "hadil": {
+      "role": "Manager",
+      "department": "IT",
+      "clearance": "public",
+      "location": "internal",
+      "salt": "d277bff92fb83a71929bdc607dc48b29",
+      "password_hash": "777fc4244f83cf84de78830e99ef8529c4456a1bf13fef1ae4fd99e2b764093f"
+    },
+    "ihsene": {
+      "role": "Employee",
+      "department": "IT",
+      "clearance": "secret",
+      "location": "internal",
+      "salt": "1857f8c08ac2e889e3fcfa9fede34196",
+      "password_hash": "d1c97494171860b1869de3d0061e751c3980b62e98d1cc1437129c1eb956356b"
+    },
+    "noor": {
+      "role": "Manager",
+      "department": "HR",
+      "clearance": "public",
+      "location": "internal",
+      "salt": "d0a01ac8f7ec4f7685712e829c195648",
+      "password_hash": "a9aacdc5009087b5434bc86ef22d112a5ed5e8b270578901cadf7c3829797106"
+    },
+    "meriem": {
+      "role": "Employee",
+      "department": "IT",
+      "clearance": "public",
+      "location": "internal",
+      "salt": "d1e2932fea514341bec206611cd72abf",
+      "password_hash": "b8a5ef10d664d3842305d584a03faf10cad1504a710ac6bb7475857ecc82f9b2"
+    },
+    "noorihs": {
+      "role": "Manager",
+      "department": "HR",
+      "clearance": "confidential",
+      "location": "external",
+      "salt": "3b8194317b024f86b19b932e549f1832",
+      "password_hash": "693f2215df0d9d272c0b9356651e3ccee200efe91365e51893bfd3fc8e752f42"
+    },
+    "ikram": {
+      "role": "Manager",
+      "department": "Finance",
+      "clearance": "public",
+      "location": "internal",
+      "salt": "9fba4d7f356b47f2a5f09bef2c3085d6",
+      "password_hash": "91719622bdea94c3164b4d266c73ffa5d7f0d706aa6acd879d7d17e4b7b32566"
+    },
+    "hadil2": {
+      "role": "Manager",
+      "department": "IT",
+      "clearance": "public",
+      "location": "external",
+      "salt": "b52bc1fea3b1419cb2d3905136b63124",
+      "password_hash": "9f92ef86940018bdc971afd1dd78e5bced6d3d947e45d1309bf875691b2e8f95"
+    }
+  }
+}

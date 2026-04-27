@@ -1,0 +1,52 @@
+{
+  "resources": {
+    "HR-001": {
+      "name":           "Employee Personal Records",
+      "department":     "HR",
+      "classification": "secret",
+      "data":           "Confidential employee personal files and salary data."
+    },
+    "HR-002": {
+      "name":           "HR Policy Handbook",
+      "department":     "HR",
+      "classification": "public",
+      "data":           "Company HR policies, leave procedures, and onboarding guides."
+    },
+    "FIN-001": {
+      "name":           "Annual Financial Statements",
+      "department":     "Finance",
+      "classification": "secret",
+      "data":           "Full P&L, balance sheet, and audit reports for FY2024."
+    },
+    "FIN-002": {
+      "name":           "Budget Allocation Report",
+      "department":     "Finance",
+      "classification": "confidential",
+      "data":           "Departmental budget allocations and spending forecasts."
+    },
+    "IT-001": {
+      "name":           "Network Architecture Diagram",
+      "department":     "IT",
+      "classification": "secret",
+      "data":           "Full network topology, firewall rules, and VPN configurations."
+    },
+    "IT-002": {
+      "name":           "IT Asset Inventory",
+      "department":     "IT",
+      "classification": "confidential",
+      "data":           "Hardware and software asset register with license information."
+    },
+    "OPS-001": {
+      "name":           "Operations Runbook",
+      "department":     "Operations",
+      "classification": "confidential",
+      "data":           "Operational procedures, escalation paths, and SLA definitions."
+    },
+    "OPS-002": {
+      "name":           "Facilities Guide",
+      "department":     "Operations",
+      "classification": "public",
+      "data":           "Office locations, access card procedures, and visitor policies."
+    }
+  }
+}
