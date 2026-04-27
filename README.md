@@ -1,17 +1,5 @@
 # SecureCorp Zero-Trust — SECURE BUILD
 
-## What Was Fixed
-
-| # | Vulnerability | File | Fix Applied |
-|---|--------------|------|-------------|
-| 1 | **Ticket Tampering** | `security.py` | Replaced bare base64 with **Fernet** (AES-128-CBC + HMAC-SHA256). Any modification raises `InvalidToken`. |
-| 2 | **Replay Attack** | `security.py` | `ReplayProtection.check_and_register()` now stores nonces with a TTL. A replayed nonce or stale timestamp returns `False` → HTTP 401 `REPLAY_DETECTED`. |
-| 3 | **Privilege Escalation** | `app.py` | Removed the lines that read `role`/`clearance` from request body or `X-Role` header. Authorization attributes come exclusively from the Fernet-protected ticket. |
-| 4 | **Cross-Department Access** | `pdp.py` | Restored `POL-001` (Department Isolation) and `POL-002` (Clearance Check) and `POL-005` (Delete Restriction) handlers. Unknown policy IDs now default to **DENY** (fail-secure). |
-| 5 | **Brute Force** | `rate_limiter.py` | Implemented real lockout: account locked for 5 min after 5 consecutive failures; IP blocked for 10 min after 20 failures in 60 s. |
-| 6 | **MFA (new)** | `security.py`, `app.py`, `mfa_server.py` | Login is now 2 steps: `POST /login` (password) → `POST /login/mfa` (6-digit PIN). The PIN is displayed on the MFA terminal (`mfa_server.py`). |
-
----
 
 ## How to Run
 
